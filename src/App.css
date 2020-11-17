@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.popup-bacground {
+    display: none;
+}
+
+.popup-bacground:before {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 9999;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header-title {
+  height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.photolist {
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.photolist__item {
+    max-width: 390px;
+    width: 100%;
+  height: 200px;
+    margin-top: 30px;
+}
+
+.photolist__item img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.popup {
+  width: 619px;
+  height: 425px;
+  background: #fff;
+  padding: 15px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 99999;
+    opacity: 1;
+}
+
+.form__photo {
+  width: 331px;
+  height: 205px;
+  background: url("https://picsum.photos/id/237/300/200") no-repeat;
+}
+
+.form__input {
+  width: 301px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+    color: #ccc;
+    margin-top: 15px;
+    padding-left: 11px;
+}
+
+.form__btn {
+    display: block;
+    background: #4997D0;
+    width: 301px;
+    height: 30px;
+    border: 1px solid #4997D0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.popup__close {
+    position: absolute;
+    width: 25.46px;
+    height: 0px;
+    left: 585px;
+    top: 10px;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
